@@ -43,5 +43,40 @@ console.log( 5 == 5) // Igualdad por valor
 console.log( 5 === 5) // Igualdad por identidad (compara el tipo y valor)
 console.log( 5 === "5")//Igualdad por identidad
 console.log( a != 6) //Desigualdad por valor
-console.log( a != "6") //Desigualdad por identidad
+console.log( a !== "6") //Desigualdad por identidad
 
+// Truthy values (valores verdaderos)
+/*
+Todos los números positivos y negativos menos el cero
+Todas las cadenas de texto menos las vacías
+El boolean true
+*/
+
+// Falsy values (valores falsos)
+/*
+0
+0n
+null
+undefined
+NaN
+El boolean false
+Cadenas de texto vacías
+*/
+
+// Operadores lógicos
+
+// AND (&&)
+console.log(5 > 10 && 15 > 20)
+
+// OR ( ||)
+console.log(5 > 10 || 15 > 20)
+console.log(5 > 10 && 15 > 20 || 30 < 40)
+
+// NOT (!)
+console.log(!(5 > 10 && 15 > 20))
+
+// Operadores ternarios:
+
+const isRaining = true
+
+isRaining ? console.log("Está lloviendo") : console.log("No está lloviendo") 
