@@ -54,6 +54,7 @@ Hola, soy Gus, vivo en Pachuca y tengo 26 años
 */
 
 const ciudad = "Pachuca"
-let anioNacimiento = 1998
-let edad2 = 2026-anioNacimiento
+const anioNacimiento = 1998
+const anioActual = 2026
+let edad2 = anioActual-anioNacimiento
 console.log(`Hola, soy Gus, vivo en ${ciudad} y tengo ${edad2}`)
