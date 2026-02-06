@@ -48,23 +48,24 @@ console.log(youngOrAdult)
 
 //6. Muestra en qué estación del año nos encontramos dependiendo del valor de una variable "mes" (utiliza else-if)
 let mes = "ABRIL"
+let mesNormalizado = mes.toLowerCase()
 
-if(mes.toLowerCase() == "diciembre"||mes.toLowerCase() == "enero" || mes.toLowerCase() == "febrero" )
+if(mesNormalizado == "diciembre"||mesNormalizado == "enero" || mesNormalizado == "febrero" )
 {
     console.log("Invierno")
 }
 
-else if(mes.toLowerCase() == "marzo" || mes.toLowerCase() == "abril" || mes.toLowerCase() == "mayo")
+else if(mesNormalizado == "marzo" || mesNormalizado == "abril" || mesNormalizado == "mayo")
 {
     console.log("Primavera")
 }
 
-else if(mes.toLowerCase() == "junio" || mes.toLowerCase() == "julio" || mes.toLowerCase() == "agosto")
+else if(mesNormalizado == "junio" || mesNormalizado == "julio" || mesNormalizado == "agosto")
 {
     console.log("Verano")
 }
 
-else if(mes.toLowerCase() == "septiembre"|| mes.toLowerCase() == "octubre" || mes.toLowerCase() == "noviembre")
+else if(mesNormalizado == "septiembre"|| mesNormalizado == "octubre" || mesNormalizado == "noviembre")
 {
     console.log("Otoño")
 }
@@ -75,19 +76,19 @@ else{
 
 //7. Muestre el número de días que tiene un mes dependiendo de la variable del ejercicio anterior. (else-if)
 
-if(mes.toLowerCase() == "enero" || mes.toLowerCase() == "marzo" || mes.toLowerCase() == "mayo" ||
-    mes.toLowerCase() == "julio" || mes.toLowerCase() == "agosto" || mes.toLowerCase() == "octubre" 
-    || mes.toLowerCase() == "diciembre")
+if(mesNormalizado == "enero" || mesNormalizado == "marzo" || mesNormalizado == "mayo" ||
+    mesNormalizado == "julio" || mesNormalizado == "agosto" || mesNormalizado == "octubre" 
+    || mesNormalizado == "diciembre")
     {
             console.log("31 días")
 
     }
-else if(mes.toLowerCase() == "abril" || mes.toLowerCase() == "junio" || mes.toLowerCase() == "septiembre" 
-        || mes.toLowerCase() == "noviembre")
+else if(mesNormalizado == "abril" || mesNormalizado == "junio" || mesNormalizado == "septiembre" 
+        || mesNormalizado == "noviembre")
         {
             console.log("30 días")
         }
-else if( mes.toLowerCase() == "febrero")
+else if( mesNormalizado == "febrero")
 {
     console.log("28 días")
 }
@@ -128,5 +129,114 @@ switch(language.toLowerCase())
 }
 
 // 9. Usa un Switch para hacer de nuevo el ejercicio 6.
+switch(mesNormalizado)
+{
+    case "enero":
+        console.log("Invierno")
+        break
+    
+    case "febrero":
+        console.log("Invierno")
+        break
+    
+    case "marzo":
+        console.log("Primavera")
+        break
+    
+    case "abril":
+        console.log("Primavera")
+        break
+    
+    case "mayo":
+        console.log("Primavera")
+        break
+    
+    case "junio":
+        console.log("Verano")
+        break
+    
+    case "julio":
+        console.log("Verano")
+        break
+    
+    case "agosto":
+        console.log("Verano")
+        break
+    
+    case "septiembre":
+        console.log("Otoño")
+        break
+    
+    case "octubre":
+        console.log("Otoño")
+        break
+    
+    case "noviembre":
+        console.log("Otoño")
+        break
+    
+    case "diciembre":
+        console.log("Invierno")
+        break
+    
+    default:
+        console.log("No ingresaste un parámetro adecuado.")
+}
+
 
 //10. Usa un Switch para hacer de nuevo el ejercicio 7.
+
+switch(mesNormalizado)
+{
+    case "enero":
+        console.log("31 días")
+        break
+    
+    case "febrero":
+        console.log("28 días")
+        break
+    
+    case "marzo":
+        console.log("31 días")
+        break
+    
+    case "abril":
+        console.log("30 días")
+        break
+    
+    case "mayo":
+        console.log("31 días")
+        break
+    
+    case "junio":
+        console.log("30 días")
+        break
+    
+    case "julio":
+        console.log("31 días")
+        break
+    
+    case "agosto":
+        console.log("31 días")
+        break
+    
+    case "septiembre":
+        console.log("30 días")
+        break
+    
+    case "octubre":
+        console.log("31 días")
+        break
+    
+    case "noviembre":
+        console.log("30 días")
+        break
+    
+    case "diciembre":
+        console.log("31 días")
+        break
+    
+    default:
+        console.log("No ingresaste un parámetro adecuado.")
+}
+
