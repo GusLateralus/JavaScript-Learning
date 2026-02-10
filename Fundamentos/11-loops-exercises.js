@@ -32,7 +32,7 @@ console.log("-------------------------------------")
 
 */ 
 
-let filas = 4
+let filas = 5
 
 console.log(`No. filas: ${filas}`)
 
@@ -64,5 +64,34 @@ for(let i = 1; i<=filas; i++)
     {
         process.stdout.write("*")
     }
+    console.log()
+}
+
+/*
+5. Imprime el siguiente patrón:
+
+    *
+   **
+  ***
+ ****
+*****
+*/
+
+console.log("---------PATRÓN ESPEJO--------------")
+
+console.log(`No. filas: ${filas}`)
+
+for(let i = 1; i<=filas; i++)
+{
+    for(let j = 1; j<=filas-i+1; j++)
+    {
+        process.stdout.write(" ")
+    }
+
+    for(let k = 1; k<= i; k++)
+    {
+        process.stdout.write("*")
+    }
+
     console.log()
 }
